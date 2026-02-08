@@ -6,6 +6,7 @@ pipeline {
     stages {
         stage('Clone code') {
             steps {
+                echo 'code clone stage'
                 git url: 'https://github.com/DevOps-Siba/node-todo-cicd-project.git',
                     branch: 'main'
             }
